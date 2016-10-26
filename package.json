@@ -1,27 +1,22 @@
 {
-  "homepage": "http://jachicao.github.io/proyecto-fluidos",
   "name": "proyecto-fluidos",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "flow-bin": "^0.33.0",
-    "gh-pages": "^0.11.0",
-    "react-scripts": "0.6.1"
+    "react-scripts": "0.7.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "normalize-css": "^2.3.1",
     "react": "^15.3.2",
-    "react-bootstrap": "^0.30.3",
-    "react-dom": "^15.3.2",
-    "react-router": "^2.8.1"
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
