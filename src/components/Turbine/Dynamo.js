@@ -17,7 +17,7 @@ export default class Dynamo extends Component {
             La forma más común es transformar el movimiento efectuado por algo o alguien.
             Es el mismo principio que el motor, pero en vez de necesitar energía para dar movimiento, recibe ese movimiento y lo transforma en energía.
           </p>
-          <Image src={Image1} rounded />
+          <Image src={Image1} rounded responsive/>
           <p>
             Usando esta misma analogía, es fácil imaginarse un motor conectado a una rueda.
             Donde el motor recibe energía para hacer girar la rueda.
@@ -39,7 +39,7 @@ export default class Dynamo extends Component {
           <p>
             Imagen para que te hagas una idea:
           </p>
-          <Image src={Image2} rounded />
+          <Image src={Image2} rounded responsive />
         </Jumbotron>
       </div>
     );

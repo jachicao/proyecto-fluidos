@@ -24,12 +24,12 @@ export default class SourceEnergy extends Component {
             O sea, las gastamos más rápido de lo que las producimos y por lo tanto, se terminan agotando (acabando).
             Ejemplos: carbón, petróleo
           </p>
-          <Image src={Image1} rounded />
+          <Image src={Image1} rounded responsive  />
           <p>
             Energías renovables: se regeneran a un ritmo igual o mayor que al que se consumen, o sea, no se agotan.
             Ejemplos: energía del sol, del viento.
           </p>
-          <Image src={Image2} rounded />
+          <Image src={Image2} rounded responsive  />
           <Question
             question={"Cuál es la principal diferencia entre las fuentes de energías renovables y no renovables?"}
             alternatives={[
@@ -67,12 +67,12 @@ export default class SourceEnergy extends Component {
             Una de las formas de obtener energía a partir del agua, es con Hidroeléctricas.
             Las centrales Hidroeléctricas aprovechan la energía del agua que proviene de un cauce natural, que lleva agua (por ejemplo, un río), que presenta un desnivel, o sea, hay una parte del agua que se encuentra más arriba que resto, y al caer, produce energía que la hidroeléctrica convierte en electricidad.
           </p>
-          <Image src={Image3} rounded />
+          <Image src={Image3} rounded responsive  />
           <p>
             Otra forma de obtener energía a partir del agua es a través del mar.
             Las olas del mar llevan mucha energía que puede ser aprovechada para producir energía.
           </p>
-          <Image src={Image4} rounded />
+          <Image src={Image4} rounded responsive  />
           <p>
             En estas centrales se utiliza un instrumento por el cual el agua pasa, le entrega su energía y este la convierte en lo que necesitamos.
             Este instrumento es la turbina.
