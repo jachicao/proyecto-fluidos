@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { Jumbotron, Image } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 export default class Home extends Component {
   render() {
