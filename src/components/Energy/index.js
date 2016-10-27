@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Energy from './Energy';
 import SourceEnergy from './SourceEnergy';
-import EnergyReferences from './EnergyReferences';
+import References from './References';
 
 export default class EnergyWrapper extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class EnergyWrapper extends Component {
       <div className="EnergyWrapper">
         <Energy />
         <SourceEnergy />
-        <EnergyReferences />
+        <References />
       </div>
     );
   }

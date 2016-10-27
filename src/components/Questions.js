@@ -2,20 +2,17 @@
 import React, { Component } from 'react';
 import { Button, Modal, FormGroup, ControlLabel, ListGroupItem, Alert } from 'react-bootstrap';
 
-export default class Question extends Component {
+export default class Questions extends Component {
   state: {
     show_modal: boolean;
     answered: boolean;
-    correct: boolean;
-    current_answer: number;
   };
   constructor(props) {
     super(props);
     this.state = {
       show_modal: false,
       answered: false,
-      correct: false,
-      current_answer: -1
+      answers: []
     };
     this.onOpen = this.onOpen.bind(this);
     this.onHide = this.onHide.bind(this);
@@ -32,62 +29,74 @@ export default class Question extends Component {
   }
 
   onAnswer() {
+    /*
     if (this.state.current_answer > -1) {
       this.setState({ answered: true, correct: this.props.correct_answer == this.state.current_answer });
     } else {
       this.setState({ answered: false, correct: false });
     }
+    */
   }
 
   onChange(event) {
-    this.setState({ current_answer: event.target.value });
+    console.log(event.target.value);
   }
 
   render() {
     return (
-      <div className="Question">
+      <div className="Questions">
         <Button
           bsStyle="primary"
           bsSize="large"
           onClick={this.onOpen}
         >
-          Pregunta rápida!
+          Preguntas rápidas!
         </Button>
         <Modal show={this.state.show_modal} onHide={this.onHide}>
           <Modal.Header closeButton>
-            <Modal.Title>Pregunta rápida!</Modal.Title>
+            <Modal.Title>Preguntas rápidas!</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <FormGroup controlId="formRadio">
-              <ControlLabel>
-                {this.props.question}
-              </ControlLabel>
               {
-                this.props.alternatives.map((alternative, index) => {
+                this.props.questions.map((question, index) => {
                   return (
-                    <div className="radio" key={alternative}>
-                      <label>
-                        <input
-                          type="radio"
-                          value={index}
-                          name="anynum"
-                          onChange={this.onChange}
-                        />
-                        {alternative}
-                      </label>
+                    <div key={question.text}>
+                      <ControlLabel>
+                        {question.text}
+                      </ControlLabel>
+                      {
+                        question.alternatives.map((alternative, index2) => {
+                          return(
+                            <div className="radio" key={alternative.text}>
+                              <label>
+                              <input
+                                type="radio"
+                                value={index + "," + index2}
+                                name="anynum"
+                                onChange={this.onChange}
+                                />
+                                {alternative.text}
+                                </label>
+                            </div>
+                          );
+                        })
+                      }
                     </div>
                   );
                 })
               }
             </FormGroup>
-            {
-              this.state.answered
-                &&
-                  (this.state.correct
-                    ? <Alert bsStyle="success">{this.props.correct_answer_text}</Alert>
-                    : <Alert bsStyle="danger">{this.props.incorrect_answer_text}</Alert>
-                  )
-            }
+            <div>
+              {
+                this.state.answered
+                  &&
+                    (this.state.correct
+                      ? <Alert bsStyle="success">{this.props.correct_answer_text}</Alert>
+                      : <Alert bsStyle="danger">{this.props.incorrect_answer_text}</Alert>
+                    )
+              }
+            </div>
           </Modal.Body>
           <Modal.Footer>
             {

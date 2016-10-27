@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import Energy from './components/Energy';
 import Turbine from './components/Turbine';
+import Relevance from './components/Relevance';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <Route path="/energy" component={Energy}/>
       <Route path="/turbine" component={Turbine}/>
+      <Route path="/relevance" component={Relevance}/>
     </Route>
   </Router>
   ,
