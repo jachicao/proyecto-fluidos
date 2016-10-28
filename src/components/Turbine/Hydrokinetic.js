@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Jumbotron, ListGroup, ListGroupItem } from 'react-bootstrap';
+import Question from '../Question';
 
 export default class Hydrokinetic extends Component {
   render() {
@@ -68,6 +69,13 @@ export default class Hydrokinetic extends Component {
                 Flujo cruzado
               </ListGroupItem>
             </ListGroup>
+            <Question
+              question={"¿Cuál no es una energía perteneciente a las turbinas Hidrocinéticas?"}
+              alternatives={["Flujos de ríos", "Liberación de agua en una represa", "Corrientes maritimas", "Olas o fluctuaciones de la marea en una costa"]}
+              correct_answer={1}
+              correct_answer_text={"Correcto!"}
+              incorrect_answer_text={"Incorrecto! La alternativa correcta es b."}
+              />
           </div>
         </Jumbotron>
       </div>

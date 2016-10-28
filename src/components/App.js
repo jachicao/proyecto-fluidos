@@ -10,7 +10,9 @@ export default class App extends Component {
         <NavigationBar />
         <div>
           {
-            this.props.children ? this.props.children : <Home />
+            this.props.children
+              ? this.props.children
+              : <Home />
           }
         </div>
       </div>

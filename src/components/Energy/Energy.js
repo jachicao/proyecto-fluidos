@@ -71,7 +71,7 @@ export default class Energy extends Component {
               La electricidad puede venir de fuentes como el sol, el viento, el agua, el calor interior de la tierra, y también, de centrales eléctricas a través de la quema de carbón, petróleo, gas natural, o a través de minerales radioactivos como el uranio.
             </p>
             <Question
-              question={"La energía que utilizamos para calefaccionar nuestras casas, que tipo de energía es?"}
+              question={"La energía que utilizamos para calefaccionar nuestras casas, ¿Qué tipo de energía es?"}
               alternatives={["Energía mecánica", "Energía térmica", "Energía eléctrica"]}
               correct_answer={1}
               correct_answer_text={"Correcto! es la energía térmica"}

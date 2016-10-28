@@ -12,7 +12,7 @@ export default class References extends Component {
               Referencias
             </h1>
             <p className="text-justify">
-              <a href="www.meric.cl">
+              <a href="http://www.meric.cl">
                 Meric Chile
               </a>
             </p>

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Jumbotron, Image } from 'react-bootstrap';
 import Image1 from '../../images/Dynamo1.png';
 import Image2 from '../../images/Dynamo2.png';
+import Question from '../Question';
 
 var imageStyle = {
   margin: '0 auto'
@@ -45,6 +46,16 @@ export default class Dynamo extends Component {
               Imagen para que te hagas una idea:
             </p>
             <Image src={Image2} rounded responsive style={imageStyle} />
+            <p className="text-justify">
+
+            </p>
+            <Question
+              question={"¿Qué asociación dinamo-motor es incorrecta, si cambiaramos el motor por un dinamo?"}
+              alternatives={["Ventilador - Aerogenerador / Torre Eólica", "Motor de lancha - Turbina", "Rueda de automóvil - Rueda de Hámster"]}
+              correct_answer={2}
+              correct_answer_text={"Correcto!"}
+              incorrect_answer_text={"Incorrecto! La alternativa correcta es c."}
+              />
           </div>
         </Jumbotron>
       </div>
