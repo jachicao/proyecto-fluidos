@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.646f48ac.css",
   "main.css.map": "static/css/main.646f48ac.css.map",
-  "main.js": "static/js/main.d8202916.js",
-  "main.js.map": "static/js/main.d8202916.js.map",
+  "main.js": "static/js/main.45c156a4.js",
+  "main.js.map": "static/js/main.45c156a4.js.map",
   "static/media/Dynamo1.png": "static/media/Dynamo1.acdcd66d.png",
   "static/media/Dynamo2.png": "static/media/Dynamo2.52e5e7a0.png",
   "static/media/Energy1.png": "static/media/Energy1.42011dd4.png",
@@ -11,6 +11,7 @@
   "static/media/Energy4.png": "static/media/Energy4.a646f94d.png",
   "static/media/Energy5.png": "static/media/Energy5.bd6c581b.png",
   "static/media/Energy6.png": "static/media/Energy6.acc5f403.png",
+  "static/media/Home1.jpg": "static/media/Home1.8a320a31.jpg",
   "static/media/Relevance1.png": "static/media/Relevance1.b2933483.png",
   "static/media/Relevance2.png": "static/media/Relevance2.f7f5ff23.png",
   "static/media/SourceEnergy1.png": "static/media/SourceEnergy1.62e39ea5.png",
