@@ -6,6 +6,10 @@ import Image2 from '../../images/Relevance2.png';
 import VideoPlayer from '../VideoPlayer';
 import Questions from '../Questions';
 
+var imageStyle = {
+  margin: '0 auto'
+};
+
 export default class Relevance extends Component {
   render() {
     return (
@@ -54,7 +58,7 @@ export default class Relevance extends Component {
               La mayor ventaja de la energía mareomotriz es que se puede predecir porque se conocen los ciclos de las mareas.
               Existen lugares en el mundo que son ideales para recolectar esta energía de las mareas por un angostamiento del continente como por ejemplo, el Canal del Chacao y el Estrecho de Magallanes. ¡Ambos ejemplos son chilenos!.
             </p>
-            <Image src={Image1} rounded responsive/>
+            <Image src={Image1} rounded responsive style={imageStyle}/>
             <p className="text-justify">
               La energía undimotriz se extrae del océano aprovechando el movimiento de las olas.
               Es una energía constante y que tiene mucho potencial en todo el mundo.
@@ -63,7 +67,7 @@ export default class Relevance extends Component {
             <p className="text-justify">
               Por este motivo, es muy importante continuar con las investigaciones porque existe un enorme potencial de energía renovable que ofrece el mar, ¡es un recurso inagotable!
             </p>
-            <Image src={Image2} rounded responsive/>
+            <Image src={Image2} rounded responsive style={imageStyle}/>
             <h2>
               Videos
             </h2>
@@ -77,7 +81,7 @@ export default class Relevance extends Component {
               ¿Qué aprendí?... Evaluemos tu aprendizaje:
             </h2>
             <Questions
-              questions = {[
+              questions={[
                 {
                   "text": "¿Cuál de las siguientes características corresponde a la energía marina?",
                   "alternatives": [

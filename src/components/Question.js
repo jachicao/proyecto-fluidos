@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { Button, Modal, FormGroup, ControlLabel, ListGroupItem, Alert } from 'react-bootstrap';
+import { Button, Modal, FormGroup, ControlLabel, Alert } from 'react-bootstrap';
 
 export default class Question extends Component {
   state: {

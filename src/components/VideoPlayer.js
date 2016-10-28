@@ -2,6 +2,10 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
 
+var centerStyle = {
+  margin: '0 auto'
+};
+
 export default class VideoPlayer extends Component {
   constructor(props) {
     super(props);
@@ -20,8 +24,8 @@ export default class VideoPlayer extends Component {
   }
   render() {
     return (
-      <div className="VideoPlayer">
-        <YouTube videoId={this.state.videoId} onReady={this.onReady} />
+      <div className="VideoPlayer" style={centerStyle}>
+        <YouTube videoId={this.state.videoId} onReady={this.onReady} style={centerStyle}/>
       </div>
     );
   }

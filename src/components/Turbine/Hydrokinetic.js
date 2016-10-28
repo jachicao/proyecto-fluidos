@@ -20,7 +20,6 @@ export default class Hydrokinetic extends Component {
               Cada tipo con sus ventajas y desventajas.
             </p>
           </div>
-
         </Jumbotron>
       </div>
     );

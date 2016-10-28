@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
-import { Button, Modal, FormGroup, ControlLabel, ListGroupItem, Alert } from 'react-bootstrap';
+import { Button, Modal, FormGroup } from 'react-bootstrap';
+import QuestionFragment from './QuestionFragment';
 
 export default class Questions extends Component {
   state: {
@@ -12,7 +13,6 @@ export default class Questions extends Component {
     this.state = {
       show_modal: false,
       answered: false,
-      answers: []
     };
     this.onOpen = this.onOpen.bind(this);
     this.onHide = this.onHide.bind(this);
@@ -29,13 +29,7 @@ export default class Questions extends Component {
   }
 
   onAnswer() {
-    /*
-    if (this.state.current_answer > -1) {
-      this.setState({ answered: true, correct: this.props.correct_answer == this.state.current_answer });
-    } else {
-      this.setState({ answered: false, correct: false });
-    }
-    */
+    this.setState({ answered: true });
   }
 
   onChange(event) {
@@ -61,48 +55,15 @@ export default class Questions extends Component {
               {
                 this.props.questions.map((question, index) => {
                   return (
-                    <div key={question.text}>
-                      <ControlLabel>
-                        {question.text}
-                      </ControlLabel>
-                      {
-                        question.alternatives.map((alternative, index2) => {
-                          return(
-                            <div className="radio" key={alternative.text}>
-                              <label>
-                              <input
-                                type="radio"
-                                value={index + "," + index2}
-                                name="anynum"
-                                onChange={this.onChange}
-                                />
-                                {alternative.text}
-                                </label>
-                            </div>
-                          );
-                        })
-                      }
-                    </div>
+                    <QuestionFragment key={question.text} question={question} answered={true} />
                   );
                 })
               }
             </FormGroup>
-            <div>
-              {
-                this.state.answered
-                  &&
-                    (this.state.correct
-                      ? <Alert bsStyle="success">{this.props.correct_answer_text}</Alert>
-                      : <Alert bsStyle="danger">{this.props.incorrect_answer_text}</Alert>
-                    )
-              }
-            </div>
           </Modal.Body>
           <Modal.Footer>
             {
-              !this.state.answered
-                ? <Button onClick={this.onAnswer}>Enviar</Button>
-                : <Button onClick={this.onHide}>Cerrar</Button>
+              <Button onClick={this.onHide}>Cerrar</Button>
             }
           </Modal.Footer>
         </Modal>

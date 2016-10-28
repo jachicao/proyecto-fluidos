@@ -4,6 +4,10 @@ import { Jumbotron, Image } from 'react-bootstrap';
 import Image1 from '../../images/Dynamo1.png';
 import Image2 from '../../images/Dynamo2.png';
 
+var imageStyle = {
+  margin: '0 auto'
+};
+
 export default class Dynamo extends Component {
   render() {
     return (
@@ -18,7 +22,7 @@ export default class Dynamo extends Component {
               La forma más común es transformar el movimiento efectuado por algo o alguien.
               Es el mismo principio que el motor, pero en vez de necesitar energía para dar movimiento, recibe ese movimiento y lo transforma en energía.
             </p>
-            <Image src={Image1} rounded responsive/>
+            <Image src={Image1} rounded responsive style={imageStyle} />
             <p className="text-justify">
               Usando esta misma analogía, es fácil imaginarse un motor conectado a una rueda.
               Donde el motor recibe energía para hacer girar la rueda.
@@ -40,7 +44,7 @@ export default class Dynamo extends Component {
             <p className="text-justify">
               Imagen para que te hagas una idea:
             </p>
-            <Image src={Image2} rounded responsive />
+            <Image src={Image2} rounded responsive style={imageStyle} />
           </div>
         </Jumbotron>
       </div>
