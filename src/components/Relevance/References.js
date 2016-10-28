@@ -13,12 +13,12 @@ export default class References extends Component {
             </h1>
             <p className="text-justify">
               <a href="www.meric.cl">
-                www.meric.cl
+                Meric Chile
               </a>
             </p>
             <p className="text-justify">
               <a href="http://www.ademar.cl/descargas/ademar_presentacion_energias_marinas_senado.pdf">
-                http://www.ademar.cl/descargas/ademar_presentacion_energias_marinas_senado.pdf
+                ADEMAR, Energías marinas
               </a>
             </p>
           </div>
