@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.646f48ac.css",
-  "main.css.map": "static/css/main.646f48ac.css.map",
-  "main.js": "static/js/main.e1d244d8.js",
-  "main.js.map": "static/js/main.e1d244d8.js.map",
+  "main.css": "static/css/main.2ce9b07a.css",
+  "main.css.map": "static/css/main.2ce9b07a.css.map",
+  "main.js": "static/js/main.cd841349.js",
+  "main.js.map": "static/js/main.cd841349.js.map",
   "static/media/Dynamo1.png": "static/media/Dynamo1.acdcd66d.png",
   "static/media/Dynamo2.png": "static/media/Dynamo2.52e5e7a0.png",
   "static/media/Energy1.png": "static/media/Energy1.42011dd4.png",
@@ -12,15 +12,14 @@
   "static/media/Energy5.png": "static/media/Energy5.bd6c581b.png",
   "static/media/Energy6.png": "static/media/Energy6.acc5f403.png",
   "static/media/Home1.jpg": "static/media/Home1.8a320a31.jpg",
+  "static/media/MaterialIcons-Regular.eot": "static/media/MaterialIcons-Regular.e79bfd88.eot",
+  "static/media/MaterialIcons-Regular.ttf": "static/media/MaterialIcons-Regular.a37b0c01.ttf",
+  "static/media/MaterialIcons-Regular.woff": "static/media/MaterialIcons-Regular.012cf6a1.woff",
+  "static/media/MaterialIcons-Regular.woff2": "static/media/MaterialIcons-Regular.570eb838.woff2",
   "static/media/Relevance1.png": "static/media/Relevance1.b2933483.png",
   "static/media/Relevance2.png": "static/media/Relevance2.f7f5ff23.png",
   "static/media/SourceEnergy1.png": "static/media/SourceEnergy1.62e39ea5.png",
   "static/media/SourceEnergy2.png": "static/media/SourceEnergy2.a1c81d60.png",
   "static/media/SourceEnergy3.png": "static/media/SourceEnergy3.9b741605.png",
-  "static/media/SourceEnergy4.png": "static/media/SourceEnergy4.a21bc31b.png",
-  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
-  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
-  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
-  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "static/media/SourceEnergy4.png": "static/media/SourceEnergy4.a21bc31b.png"
 }
