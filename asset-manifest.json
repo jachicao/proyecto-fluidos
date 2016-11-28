@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.2ce9b07a.css",
-  "main.css.map": "static/css/main.2ce9b07a.css.map",
-  "main.js": "static/js/main.60160177.js",
-  "main.js.map": "static/js/main.60160177.js.map",
+  "main.css": "static/css/main.58923a39.css",
+  "main.css.map": "static/css/main.58923a39.css.map",
+  "main.js": "static/js/main.246ffd7c.js",
+  "main.js.map": "static/js/main.246ffd7c.js.map",
   "static/media/Dynamo1.png": "static/media/Dynamo1.acdcd66d.png",
   "static/media/Dynamo2.png": "static/media/Dynamo2.52e5e7a0.png",
   "static/media/Energy1.png": "static/media/Energy1.42011dd4.png",
@@ -22,5 +22,10 @@
   "static/media/SourceEnergy1.png": "static/media/SourceEnergy1.62e39ea5.png",
   "static/media/SourceEnergy2.png": "static/media/SourceEnergy2.a1c81d60.png",
   "static/media/SourceEnergy3.png": "static/media/SourceEnergy3.9b741605.png",
-  "static/media/SourceEnergy4.png": "static/media/SourceEnergy4.a21bc31b.png"
+  "static/media/SourceEnergy4.png": "static/media/SourceEnergy4.a21bc31b.png",
+  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
+  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
+  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
+  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
 }
