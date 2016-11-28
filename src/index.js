@@ -11,6 +11,9 @@ import 'react-mdl/extra/material.js';
 
 import 'material-design-icons/iconfont/material-icons.css';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+
 import { Router, Route, hashHistory } from 'react-router'
 
 ReactDOM.render(

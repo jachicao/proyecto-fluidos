@@ -1,7 +1,13 @@
 // @flow
 import React, { Component } from 'react';
-import { Jumbotron, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Jumbotron, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
+import Image1 from '../../images/Hydrokinetic1.png';
+import Image2 from '../../images/Hydrokinetic2.png';
 import Question from '../Question';
+
+var imageStyle = {
+  margin: '0 auto'
+};
 
 export default class Hydrokinetic extends Component {
   render() {
@@ -55,20 +61,44 @@ export default class Hydrokinetic extends Component {
             <h2 className="text-justify">
               Sistema de conversión energética
             </h2>
-            <ListGroup>
-              <ListGroupItem>
-                Turbina de eje horizontal
-              </ListGroupItem>
-              <ListGroupItem>
-                Turbina de eje vertical
-              </ListGroupItem>
-              <ListGroupItem>
-                Lámina oscilante
-              </ListGroupItem>
-              <ListGroupItem>
-                Flujo cruzado
-              </ListGroupItem>
-            </ListGroup>
+            <h3 className="text-justify">
+              Turbina de eje horizontal
+            </h3>
+            <p className="text-justify">
+              Esta es la aplicación más común de las turbinas.
+              Funciona exactamente igual que una turbina eólica pero bajo el agua.
+              En otras palabras, el agua choca de frente contra una estructura similar a la de un ventilador.
+              Por la forma de las astas, la turbina gira en una dirección, dándole energía al dinamo.
+            </p>
+            <Image src={Image1} rounded responsive style={imageStyle}/>
+            <h3 className="text-justify">
+              Turbina de eje vertical
+            </h3>
+            <p className="text-justify">
+              Como muestra la imagen, el receptor energético se encuentra de forma perpendicular a la corriente.
+              Las astas tienen una estructura especial que al enfrentarse al agua en movimiento deben rotar en un sentido para reducir el roce con el agua.
+            </p>
+            <Image src={Image2} rounded responsive style={imageStyle}/>
+            <h3 className="text-justify">
+              Lámina oscilante
+            </h3>
+            <p className="text-justify">
+              El mecanismo principal difiera de una turbina.
+              La obtención energética se hace con una boya, la cual al subir y bajar mueve mecanismos internos en los receptores energéticos, que transforman la energía lineal (de arriba a abajo), en una radial (como la de un dinamo).
+            </p>
+            <h3 className="text-justify">
+              Flujo forzado
+            </h3>
+            <p className="text-justify">
+              La estructura de estos sistemas no están bien definidas, pero generalmente son una mezcla entre alguna de los dos primeras turbinas, un sistema de captación de agua, y un sistema rotacional.
+              Aunque se pueden encontrar sistemas más elaborados.
+            </p>
+            <p className="text-justify">
+              Si no queda claro como el agua hace girar las astas en algún sentido determinado.
+              Puedes verlo como si las partículas de agua, o un flujo en general, ya no son partículas si no piedritas.
+              Estas piedras chocan con la lámina de acero, como esta se encuentra ladeada, es empujada en dirección del asta en contra de la piedra. Pero cómo se encuentra fija, y solo puede rotar.
+              Entonces rota en esa dirección.
+            </p>
             <Question
               question={"¿Cuál no es una energía perteneciente a las turbinas Hidrocinéticas?"}
               alternatives={["Flujos de ríos", "Liberación de agua en una represa", "Corrientes maritimas", "Olas o fluctuaciones de la marea en una costa"]}
