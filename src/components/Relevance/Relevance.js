@@ -71,12 +71,13 @@ export default class Relevance extends Component {
             <h2>
               Videos
             </h2>
-            <div className="video1">
-              <VideoPlayer videoId='aWvs8dUhTTo'/>
-            </div>
-            <div className="video2">
-              <VideoPlayer videoId='J9_xPgU7N_M'/>
-            </div>
+            <VideoPlayer videoId='aWvs8dUhTTo'/>
+            <br />
+            <VideoPlayer videoId='J9_xPgU7N_M'/>
+            <br />
+            <VideoPlayer videoId='f7bY4ss4gTk'/>
+            <br />
+            <VideoPlayer videoId='xj-AcpV-69A'/>
             <h2>
               ¿Qué aprendí?... Evaluemos tu aprendizaje:
             </h2>

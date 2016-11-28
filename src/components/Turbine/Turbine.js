@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Jumbotron } from 'react-bootstrap';
+import VideoPlayer from '../VideoPlayer';
 
 export default class Turbine extends Component {
   render() {
@@ -24,6 +25,10 @@ export default class Turbine extends Component {
               Pero últimamente se han desarrollado turbinas que no necesitan de este sistema controlado para obtener energía, solo la turbina y el agua.
               A este tipo de turbinas se les cataloga como hidrocinéticas.
             </p>
+            <VideoPlayer videoId='J9IZP2YH-6Q'/>
+            <br />
+            <VideoPlayer videoId='42c2lQ2A1eA'/>
+            <br />
           </div>
         </Jumbotron>
       </div>

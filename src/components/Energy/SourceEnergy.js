@@ -35,6 +35,7 @@ export default class SourceEnergy extends Component {
               Ejemplos: energía del sol, del viento.
             </p>
             <Image src={Image2} rounded responsive style={imageStyle} />
+            <br />
             <Question
               question={"Cuál es la principal diferencia entre las fuentes de energías renovables y no renovables?"}
               alternatives={[
@@ -88,6 +89,9 @@ export default class SourceEnergy extends Component {
               Videos
             </h2>
             <VideoPlayer videoId='oYqduhNY6QM'/>
+            <br />
+            <VideoPlayer videoId='17cEtPKPwGQ'/>
+            <br />
             <Question
               question={"Cuáles son fuentes de energía renovable?"}
               alternatives={[
